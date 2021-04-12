@@ -1,0 +1,4 @@
+content/scenarios/*.md
+!content/scenarios/_index.md
+content/scenarios/workflow/.snakemake
+public
