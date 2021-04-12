@@ -2,7 +2,7 @@ title = "Varlociraptor Scenario Catalog"
 description = "Flexible, arbitrary-scenario, uncertainty-aware variant calling with parameter free filtration via FDR control."
 
 # The URL the site will be built for
-base_url = "https://varlociraptor.github.io"
+base_url = "https://varlociraptor.github.io/varlociraptor-scenarios"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
