@@ -1,7 +1,12 @@
-name: Tumor/normal calling with priors
+name: Tumor/relapse calling with priors
 desc: |
-  This scenario configures Varlociraptor to perform tumor/normal calling. The model is configured with prior assumptions about mutation rate and heterozygosity.
+  This scenario configures Varlociraptor to perform tumor/normal calling.
+  Contamination of the tumor sample by normal cells is specified.
+  Varlociraptor is able to use the known contamination with normal cells to also infer information about potential germline variants.
+  Of course, distinguishing between germline and somatic mutations in the tumor/relapse is never certain in such a scenario, but the probabilities are accurately split between the two.
+  The model is configured with prior assumptions about mutation rate and heterozygosity.
 plot-prior:
   samples:
     - tumor
-
+  contigs:
+    - 1

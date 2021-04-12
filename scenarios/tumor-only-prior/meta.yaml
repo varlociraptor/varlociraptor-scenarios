@@ -9,4 +9,5 @@ desc: |
 plot-prior:
   samples:
     - tumor
-
+  contigs:
+    - 1

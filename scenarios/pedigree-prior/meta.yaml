@@ -4,4 +4,6 @@ desc: |
 plot-prior:
   samples:
     - child
+  contigs:
+    - 1
 

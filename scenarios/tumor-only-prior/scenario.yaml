@@ -14,6 +14,7 @@ species:
 
 samples:
   tumor:
+    sex: female
     somatic-effective-mutation-rate: 1e-6
     inheritance:
       clonal:

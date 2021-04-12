@@ -14,10 +14,12 @@ species:
 
 samples:
   tumor:
+    sex: male
     somatic-effective-mutation-rate: 1e-6
     inheritance:
       clonal:
         from: normal
+        somatic: false
     contamination:
       by: normal
       fraction: 0.1

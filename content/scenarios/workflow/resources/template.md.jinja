@@ -9,16 +9,17 @@ weight = 1
 {{ scenario }}
 ```
 
-{% if prior_plots|length %}
+{% if prior_plots %}
 ## Prior probabilities
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-{% for prior_plot in prior_plots %}
-<div id="vis"></div>
+{% for (sample, contig), prior_plot in prior_plots.items() %}
+### {{ sample }}, chromosome: {{ contig }}
+<div id="{{ sample }}-{{ contig }}"></div>
 <script>
-    vegaEmbed('#vis', {{ prior_plot|safe }});
+    vegaEmbed('#{{ sample }}-{{ contig }}', {{ prior_plot|safe }});
 </script>
 {% endfor %}
 {% endif %}
