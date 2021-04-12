@@ -6,7 +6,7 @@ weight = 0
 <div style="text-align: center;">
 <img src="varlociraptor-logo.svg" style="width: 25%">
 
-The Varlociraptor scenario catalog
+The Varlociraptor Scenario Catalog
 </div>
 
 <style>

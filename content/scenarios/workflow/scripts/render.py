@@ -8,7 +8,7 @@ plot_prior = meta.get("plot-prior", False)
 prior_plots = []
 if plot_prior:
     for sample in plot_prior["samples"]:
-        cmd = ["varlociraptor", "plot", "variant-calling-prior", "--sample", sample, "--scenario" snakemake.input.scenario]
+        cmd = ["varlociraptor", "plot", "variant-calling-prior", "--sample", sample, "--scenario", snakemake.input.scenario]
         contig = plot_prior.get("contig")
         if contig:
             cmd += ["--contig", contig]
