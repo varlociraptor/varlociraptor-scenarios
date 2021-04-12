@@ -1,0 +1,20 @@
+species:
+  heterozygosity: 0.001
+  ploidy:
+    all: 2
+    X: 1
+    Y: 0
+  genome-size: 3.5e9
+
+samples:
+  tumor:
+    somatic-effective-mutation-rate: 1e-6
+    inheritance:
+      clonal:
+        from: normal
+  normal:
+    sex: female
+
+events:
+  somatic_tumor: "normal:0.0 & tumor:]0.0,1.0]"
+  germline: "normal:0.5 | normal:1.0"

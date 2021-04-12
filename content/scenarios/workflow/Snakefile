@@ -1,0 +1,16 @@
+from snakemake.utils import glob_wildcards
+
+SCENARIOS = glob_wildcards("../../../scenarios/{scenario}/scenario.yaml").scenario
+
+
+rule render_scenario:
+    input:
+        scenario="../../../scenarios/{scenario}/scenario.yaml",
+        meta="../../../scenarios/{scenario}/meta.yaml",
+        template="resources/template.md.jinja",
+    output:
+        "{scenario}.md"
+    conda:
+        "envs/render.yaml"
+    script:
+        "scripts/render.py"

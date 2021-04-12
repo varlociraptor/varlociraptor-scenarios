@@ -1,0 +1,30 @@
+name: Build and deploy GH Pages
+
+on:
+  push:
+    branches:
+      - dev 
+  pull_request:
+
+jobs:
+  build:
+    name: shalzz/zola-deploy-action
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout
+      - uses: actions/checkout@master
+      # Render scenario pages
+      - name: Render scenarios
+        uses: snakemake/snakemake-github-action@v1.17.0
+        with:
+          directory: 'content/scenarios/workflow'
+          snakefile: 'Snakefile'
+          args: '--cores 1 --use-conda'
+      # Build & deploy
+      - name: Deploy
+        uses: shalzz/zola-deploy-action@v0.12.2
+        env:
+          # Target branch
+          PAGES_BRANCH: main
+          # Provide personal access token
+          TOKEN: ${{ secrets.TOKEN }}
