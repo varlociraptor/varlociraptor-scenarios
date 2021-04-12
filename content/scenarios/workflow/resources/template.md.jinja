@@ -16,7 +16,7 @@ weight = 1
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
 {% for (sample, contig), prior_plot in prior_plots.items() %}
-### {{ sample }}, chromosome: {{ contig }}
+### sample: {{ sample }}, chromosome: {{ contig }}
 <div id="{{ sample }}-{{ contig }}"></div>
 <script>
     vegaEmbed('#{{ sample }}-{{ contig }}', {{ prior_plot|safe }});
