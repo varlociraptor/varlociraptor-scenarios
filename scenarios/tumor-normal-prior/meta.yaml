@@ -1,5 +1,9 @@
 name: Tumor/normal calling with priors
 desc: |
-  This scenario configures Varlociraptor to perform tumor/normal calling. The model is configured with prior assumptions about mutation rate and heterozygosity.
-
+  This scenario configures Varlociraptor to perform tumor/normal calling. 
+  The model is configured with prior assumptions about mutation rate and heterozygosity.
+  In addition, contamination of the tumor sample by normal cells is specified.
+plot-prior:
+  samples:
+    - tumor
 

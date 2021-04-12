@@ -1,0 +1,8 @@
+name: Population calling with priors
+desc: |
+  This scenario configures Varlociraptor to perform population calling. The model is configured with prior assumptions about mutation rate and heterozygosity.
+  Note that future versions of Varlociraptor will additionaly support quantors "any" and "all", which will make population calling more efficient and convenient.
+plot-prior:
+  samples:
+    - a
+

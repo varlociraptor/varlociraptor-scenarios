@@ -1,0 +1,7 @@
+name: Trio pedigree calling with priors
+desc: |
+  This scenario configures Varlociraptor to perform a simple trio pedigree calling. The model is configured with prior assumptions about mutation rate and heterozygosity.
+plot-prior:
+  samples:
+    - tumor
+
