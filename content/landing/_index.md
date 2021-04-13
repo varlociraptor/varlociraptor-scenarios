@@ -26,7 +26,7 @@ Here you can find a collection of common scenarios configuring the statistical m
 ---
 
 [![Repo](https://img.shields.io/badge/code%20on-github-blue)](https://github.com/varlociraptor/varlociraptor-scenarios)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/varlociraptor/varlociraptor-scenarios/CI/dev?label=tests)](https://github.com/varlociraptor/varlociraptor/commits/dev)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/varlociraptor/varlociraptor-scenarios/Build%20and%20deploy%20GH%20Pages)](https://github.com/varlociraptor/varlociraptor-scenarios/commits/dev)
 [![License](https://img.shields.io/github/license/varlociraptor/varlociraptor-scenarios)](https://github.com/varlociraptor/varlociraptor-scenarios/blob/master/LICENSE)
 
 </div>
