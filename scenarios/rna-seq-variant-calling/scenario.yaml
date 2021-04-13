@@ -1,0 +1,7 @@
+sample:
+  hamletsrna:
+    universte: "[0.0,1.0]"
+    resolution: 10
+
+events:
+  present: "hamletsrna:]0.0,1.0]"

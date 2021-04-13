@@ -1,0 +1,11 @@
+name: Variant calling on RNA-seq data
+desc: |
+  When calling variants on RNA-seq, allele frequencies can, although e.g. investigating a diploid sample, take any value from `0.0` to `1.0` again, because we don't know which allele is expressed in what amount.
+  This situation can be easily modeled in Varlociraptor.
+
+  RNA-seq variant calling can however suffer from other issues like splicing induced artifacts.
+  The right way of mapping and processing reads for RNA-seq variant calling is still an area of active research, 
+  and we suggest to carefully investigate the current state of the art preprocessing steps, 
+  and possible solutions to avoid such artifacts (post-mapping cleanup, mapping against transcriptome, assembly-first, ...).
+
+

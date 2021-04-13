@@ -1,6 +1,6 @@
-name: Tumor-only calling with priors
+name: Tumor-only calling without priors
 desc: |
-  This scenario configures Varlociraptor to perform tumor-only calling, under the assumption of a uniform prior.
+  This scenario configures Varlociraptor to perform tumor-only calling.
   Contamination of the tumor sample by normal cells is specified.
 
   With such a scenario, even when no aligned reads from a separate normal sample are provided, Varlociraptor can still calculate the probabilities for the defined events.
@@ -11,9 +11,3 @@ desc: |
 
   Since there will be often ambiguity between germline and somatic events (which, as intended, properly reflects the uncertainty in the data), one should control the FDR only jointly on the three events defined here, not on one of them.
   For the resulting filtered set of variants, judgement about interpretation and following actions should then be made individually, with the three probabilities in mind.
-  
-plot-prior:
-  samples:
-    - tumor
-  contigs:
-    - 1

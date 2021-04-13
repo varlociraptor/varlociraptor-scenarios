@@ -1,0 +1,16 @@
+samples:
+  romeo:
+    universe:
+      all: "0.0 | 0.5 | 1.0"
+      X:   "0.0 | 1.0"
+      Y:   "0.0 | 1.0"
+  juliet:
+    universe:
+      all: "0.0 | 0.5 | 1.0"
+      Y:   "0.0"
+
+events:
+  both_het: "juliet:0.5 & romeo:0.5"
+  both_hom: "juliet:1.0 & romeo:1.0"
+  juliet_only: "(juliet:0.5 | juliet:1.0) & romeo:0.0"
+  romeo_only: "(romeo:0.5 | romeo:1.0) & juliet:0.0"

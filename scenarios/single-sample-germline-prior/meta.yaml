@@ -1,0 +1,8 @@
+name: Single sample germline calling with priors
+desc: |
+  This scenario configures Varlociraptor to perform a single sample calling with known heterozygosity, the probably most simple case in variant calling.
+plot-prior:
+  samples:
+    - hamlet
+  contigs:
+    - 1

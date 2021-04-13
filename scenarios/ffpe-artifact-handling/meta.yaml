@@ -1,0 +1,5 @@
+name: FFPE artifact handling
+desc: |
+  When analyzing formalin-fixed paraffin embedded tissues, one can expect considerable rates of low-frequency C>T and G>A artifacts (see [Do and Dobrovic, Clinical Chemistry 2014](https://doi.org/10.1373/clinchem.2014.223040)).
+  The variant calling grammar allows to model them as a separate event, allowing to filter them away while considering the involved uncertainty.
+  As can be seen, here we introduce an additional type of atomic expression, selecting particular substitutions (e.g. `C>T`, allowed is the [IUPAC DNA alphabet](https://www.bioinformatics.org/sms/iupac.html)).

@@ -1,0 +1,15 @@
+name: Chromosome specific allele frequency universes
+desc: |
+  Certain chromosomes differ from the overall ploidy of an organism (e.g. sex chromosomes).
+  Hence, variants occuring at such chromosomes exhibit different allele frequencies.
+  This can best be modeled via a species definition, see e.g. [this scenario](https://varlociraptor.github.io/varlociraptor-scenarios/scenarios/pedigree-prior).
+  In case the required prior knowledge about mutation rates and heterozygosity is unknown, it is altenatively possible to constrain allele frequency universes by chromosome.
+  The following example defines the calling for two human samples under a uniform allele frequency universe.
+
+  As can be seen, we define a universe for all chromosomes (`all`), and add exceptions for Romeo (the male) being haploid in the sex chromosomes.
+  For Juliet (female), the X chromosome is diploid like all other chromosomes, while there is no Y chromosome at all.
+  Hence, the universe for the Y chromosome becomes `0.0` only.
+  Currently, Varlociraptor assumes a uniform prior over the defined universes (the grammar will be soon extended to allow other priors as well).
+  This means that restricting the universe as above also impacts the calculated probabilities for the defined events.
+  For example, on chromosome Y, there will be no calls for Juliet, because all allele frequencies other than 0.0 will get a probability of zero.
+  Therefore, all chromosome Y variants will be classified as `romeo_only` or `absent` (the implicit event that none of the samples hosts the variant).

@@ -1,0 +1,14 @@
+samples:
+  normal:
+    universe: "0.0 | 0.5 | 1.0"
+  tumor:
+    resolution: 100
+    universe: "[0.0,1.0]"
+    contamination:
+      by: normal
+      fraction: 0.25
+
+events:
+  somatic_tumor_high: "normal:0.0 & tumor:[0.1,1.0]"
+  somatic_tumor_low: "normal:0.0 & tumor:]0.0,0.1["
+  germline: "normal:0.5 | normal:1.0"
