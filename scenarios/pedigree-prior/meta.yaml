@@ -1,6 +1,10 @@
 name: Complex pedigree calling with priors
 desc: |
   This scenario configures Varlociraptor to perform a complex pedigree calling. The model is configured with prior assumptions about mutation rate and heterozygosity.
+
+  Note the reuse of the two denovo events in negated form as expressions in the `other` event. 
+  Since the event space in Varlociraptor needs to cover all possibilites (absent event is always implicitly added), such statements can be very handy.
+  When performing such a negation, it is important to also include the absent event though (to avoid considering it twice).
 plot-prior:
   samples:
     - child
