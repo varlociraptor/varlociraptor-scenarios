@@ -4,4 +4,4 @@ channels:
 dependencies:
   - jinja2
   - pyyaml
-  - varlociraptor >=3.3
+  - varlociraptor >=4.3
