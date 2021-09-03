@@ -1,7 +1,7 @@
 samples:
   ffpetumor:
     universe: "[0.0,1.0]"
-    resolution: 100
+    resolution: 0.01
 
 expressions:
   ffpe_subst: "(C>T | G>A)"

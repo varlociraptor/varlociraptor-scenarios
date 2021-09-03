@@ -2,7 +2,7 @@ samples:
   normal:
     universe: "0.0 | 0.5 | 1.0"
   tumor:
-    resolution: 100
+    resolution: 0.01
     universe: "[0.0,1.0]"
     contamination:
       by: normal
