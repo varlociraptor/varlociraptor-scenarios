@@ -19,7 +19,7 @@ jobs:
         with:
           directory: 'content/scenarios/workflow'
           snakefile: 'content/scenarios/workflow/Snakefile'
-          args: '--cores 1 --use-conda'
+          args: '--cores 1 --use-conda --show-failed-logs'
       # Build & deploy
       - name: Deploy
         uses: shalzz/zola-deploy-action@v0.12.2
