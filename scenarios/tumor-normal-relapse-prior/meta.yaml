@@ -1,8 +1,6 @@
 name: Tumor/normal/relapse calling with priors
 desc: |
   This scenario configures Varlociraptor to perform tumor/normal/relapse calling. The model is configured with prior assumptions about mutation rate and heterozygosity.
-  For the relapse, there are currently no assumptions possible, since the therapy may induce any kind of shift in frequencies.
-  Hence, the relapse sample is configured with a uniform prior (by manually specifying an allele frequency universe).
 plot-prior:
   samples:
     - relapse
