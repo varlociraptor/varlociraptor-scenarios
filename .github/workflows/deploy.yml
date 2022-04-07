@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@main
       # Render scenario pages
       - name: Render scenarios
-        uses: snakemake/snakemake-github-action@v1.17.0
+        uses: snakemake/snakemake-github-action@v1
         with:
           directory: 'content/scenarios/workflow'
           snakefile: 'content/scenarios/workflow/Snakefile'
