@@ -30,7 +30,16 @@ samples:
       by: normal
       fraction: 0.1
   normal:
-    somatic-effective-mutation-rate: 1e-10
+    # While in general one could set the true prior expectation for somatic variants
+    # in healthy tissue below (e.g. 1e-10), it is usually advisable to
+    # put the same rate as for the tumor below. Otherwise,
+    # it can happen that evidence for the mutation being already in the normal
+    # is put aside just because the prior probability is so much lower
+    # than in the tumor. Since usually one is interested in true somatic
+    # mutations, this approach can be considered conservative in the sense that
+    # at most some borderline cases could be lost when filtering for somatic variants
+    # in the tumor.
+    somatic-effective-mutation-rate: 1e-6
     sex: male
 
 events:
