@@ -26,7 +26,8 @@ samples:
     sex: male
     somatic-effective-mutation-rate: 1e-6
     inheritance:
-      subclonal: tumor
+      subclonal:
+        from: tumor
     contamination:
       by: normal
       fraction: 0.1
