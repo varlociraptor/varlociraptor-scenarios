@@ -19,7 +19,7 @@ samples:
     inheritance:
       clonal:
         from: normal
-        somatic: false
+        somatic: true
     contamination:
       by: normal
       fraction: 0.1
