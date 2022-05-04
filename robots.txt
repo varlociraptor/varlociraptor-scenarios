@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://varlociraptor.github.io/varlociraptor-scenarios/sitemap.xml
