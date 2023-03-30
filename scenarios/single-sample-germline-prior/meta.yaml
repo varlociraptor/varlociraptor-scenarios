@@ -1,6 +1,8 @@
 name: Single sample germline calling with priors
 desc: |
   This scenario configures Varlociraptor to perform a single sample calling with known heterozygosity, the probably most simple case in variant calling.
+  Note that you should configure the prior heterozygosity expectation with your own expetise or via literature research. 
+  The values shown here are only examples and can differ depending e.g. on the species or the population.
 plot-prior:
   samples:
     - hamlet

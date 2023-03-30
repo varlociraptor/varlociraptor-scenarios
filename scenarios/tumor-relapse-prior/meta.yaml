@@ -5,6 +5,8 @@ desc: |
   Varlociraptor is able to use the known contamination with normal cells to also infer information about potential germline variants.
   Of course, distinguishing between germline and somatic mutations in the tumor/relapse is never certain in such a scenario, but the probabilities are accurately split between the two.
   The model is configured with prior assumptions about mutation rate and heterozygosity.
+  Note that you should configure these with your own expetise or via literature research. 
+  The values shown here are only examples.
 plot-prior:
   samples:
     - tumor
