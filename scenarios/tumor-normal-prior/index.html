@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Varlociraptor Scenario Catalog</title>
+
+      
+      
+
+      <!-- CSS -->
+      
+      <link rel="stylesheet" href="https://varlociraptor.github.io/varlociraptor-scenarios/book.css">
+      
+
+      
+      
+    </head>
+
+    <body>
+        <div class="menu">
+            
+            
+            <nav role="navigation">
+                <ul>
+                    
+                        
+                        
+                            
+                            <li >
+                                
+                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;landing&#x2F;">
+                                    
+                                    Home
+                                </a>
+                                
+                            </li>
+                        
+                            
+                            <li >
+                                
+                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;">
+                                    
+                                    Variant calling scenarios
+                                </a>
+                                
+                                    <ul>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;chromosome-specific-universe&#x2F;">
+                                                    
+                                                    Chromosome specific allele frequency universes
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;ffpe-artifact-handling&#x2F;">
+                                                    
+                                                    FFPE artifact handling
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;pedigree-prior&#x2F;">
+                                                    
+                                                    Complex pedigree calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;population-prior&#x2F;">
+                                                    
+                                                    Population calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;rna-seq-variant-calling&#x2F;">
+                                                    
+                                                    Variant calling on RNA-seq data
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;simple-pedigree-prior&#x2F;">
+                                                    
+                                                    Trio pedigree calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;single-sample-germline-prior&#x2F;">
+                                                    
+                                                    Single sample germline calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="active">
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-normal-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;normal calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-normal-relapse-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;normal&#x2F;relapse calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-only-prior&#x2F;">
+                                                    
+                                                    Tumor-only calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-only&#x2F;">
+                                                    
+                                                    Tumor-only calling without priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-relapse-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;relapse calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    
+                </ul>
+            </nav>
+            
+            <img src="/landing/varlociraptor-logo.svg" style="width: 8em; margin: auto; display: block; margin-top: 2em" />
+            
+        </div>
+
+        <div class="page">
+            <div class="page__header">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <span class="search-icon">🔎</span>
+                
+            </div>
+
+            <div class="page__content">
+                
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="Search..">
+                    <div class="search-results">
+                        <div class="search-results__header"></div>
+                        <ul class="search-results__items"></ul>
+                    </div>
+                </div>
+                
+                <div class="book-content">
+                    
+    <h1>Tumor&#x2F;normal calling with priors</h1>
+    <p>This scenario configures Varlociraptor to perform tumor/normal calling. 
+The model is configured with prior assumptions about mutation rate and heterozygosity.
+Note that you should configure these with your own expetise or via literature research. 
+The values shown here are only examples.
+In addition, contamination of the tumor sample by normal cells is specified.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">species</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">heterozygosity</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">0.001
+  </span><span style="color:#bf616a;">germline-mutation-rate</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">1e-3
+  ploidy</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">male</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">all</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      </span><span style="color:#bf616a;">X</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">1
+      Y</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">1
+    </span><span style="color:#bf616a;">female</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">all</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      </span><span style="color:#bf616a;">X</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      Y</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">0
+  </span><span style="color:#bf616a;">genome-size</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">3.5e9
+
+samples</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">tumor</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">female
+    somatic-effective-mutation-rate</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">1e-6
+    inheritance</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">clonal</span><span style="color:#c0c5ce;">:
+        </span><span style="color:#bf616a;">from</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">normal
+        somatic</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">true
+    </span><span style="color:#bf616a;">contamination</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">by</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">normal
+      fraction</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">0.1
+  </span><span style="color:#bf616a;">normal</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">female
+    somatic-effective-mutation-rate</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">1e-10
+
+events</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">somatic_tumor_high</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">normal:0.0 &amp; tumor:[0.1,1.0]</span><span style="color:#c0c5ce;">&quot;
+  </span><span style="color:#bf616a;">somatic_tumor_low</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">normal:0.0 &amp; tumor:]0.0,0.1[</span><span style="color:#c0c5ce;">&quot;
+  </span><span style="color:#bf616a;">somatic_normal</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">normal:]0.0,0.5[</span><span style="color:#c0c5ce;">&quot;
+  </span><span style="color:#bf616a;">germline</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">normal:0.5 | normal:1.0</span><span style="color:#c0c5ce;">&quot;
+
+</span></code></pre><h2 id="prior-probabilities">Prior probabilities</h2>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<h3 id="sample-tumor-chromosome-1">sample: tumor, chromosome: 1</h3>
+<div id="tumor-1"></div>
+<script>
+    vegaEmbed('#tumor-1', {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "values": [
+      {
+        "hash": "EAA88387",
+        "sample": "normal",
+        "vaf": 0.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 0.9984991556655468,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 0.9984991556655468,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "D88C3889",
+        "sample": "normal",
+        "vaf": 0.125
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "D88C3889",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "121079FD",
+        "sample": "normal",
+        "vaf": 0.25
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "121079FD",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "F7937D6B",
+        "sample": "normal",
+        "vaf": 0.375
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "F7937D6B",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A33549F5",
+        "sample": "normal",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "F3115EB1",
+        "sample": "normal",
+        "vaf": 0.625
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "F3115EB1",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "C5BFCEC6",
+        "sample": "normal",
+        "vaf": 0.75
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "C5BFCEC6",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "27CC3031",
+        "sample": "normal",
+        "vaf": 0.875
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "27CC3031",
+        "prob": 9.999995649846278e-11,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "64435EDE",
+        "sample": "normal",
+        "vaf": 1.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 0.0005000005635181755,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 0.0005000005635181755,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 0.9984991556655468,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 0.9984991556655468,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "EAA88387",
+        "prob": 9.984985259500278e-7,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 0.0010000010271112533,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "A33549F5",
+        "prob": 1.0998997768266655e-9,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 0.0005000005635181755,
+        "sample": "tumor",
+        "vaf": 1.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.0
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.125
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.25
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.375
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.5
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.625
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.75
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 5.999512636313647e-10,
+        "sample": "tumor",
+        "vaf": 0.875
+      },
+      {
+        "hash": "64435EDE",
+        "prob": 0.0005000005635181755,
+        "sample": "tumor",
+        "vaf": 1.0
+      }
+    ]
+  },
+  "description": "Prior distribution.",
+  "facet": {
+    "row": {
+      "field": "hash",
+      "header": {
+        "labelColor": "white",
+        "labelExpr": "''",
+        "labelFontSize": 0,
+        "title": ""
+      },
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "layer": [
+      {
+        "encoding": {
+          "color": {
+            "field": "sample",
+            "type": "nominal"
+          },
+          "x": {
+            "field": "vaf",
+            "type": "quantitative"
+          },
+          "x2": {
+            "field": "vaf",
+            "type": "quantitative"
+          },
+          "y": {
+            "value": 0
+          },
+          "y2": {
+            "value": 200
+          }
+        },
+        "mark": "rule",
+        "transform": [
+          {
+            "filter": "datum.sample != 'tumor'"
+          }
+        ]
+      },
+      {
+        "encoding": {
+          "color": {
+            "field": "sample",
+            "type": "nominal"
+          },
+          "x": {
+            "field": "vaf",
+            "title": "VAF",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "prob",
+            "scale": {
+              "type": "log"
+            },
+            "title": "Prior probability",
+            "type": "quantitative"
+          }
+        },
+        "mark": {
+          "point": true,
+          "type": "line"
+        },
+        "transform": [
+          {
+            "filter": {
+              "equal": "tumor",
+              "field": "sample"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+);
+</script>
+
+
+                </div>
+            </div>
+
+            <div class="prev-link">
+                
+    
+        <a class="previous" href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;single-sample-germline-prior&#x2F;"><</a>
+    
+
+            </div>
+
+            <div class="next-link">
+                
+    
+        <a class="next" href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-normal-relapse-prior&#x2F;">></a>
+    
+
+            </div>
+        </div>
+
+        
+            
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/elasticlunr.min.js"></script>
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/search_index.en.js"></script>
+            
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/book.js"></script>
+        
+    </body>
+
+</html>

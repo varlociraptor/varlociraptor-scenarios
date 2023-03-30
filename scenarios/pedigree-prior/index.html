@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Varlociraptor Scenario Catalog</title>
+
+      
+      
+
+      <!-- CSS -->
+      
+      <link rel="stylesheet" href="https://varlociraptor.github.io/varlociraptor-scenarios/book.css">
+      
+
+      
+      
+    </head>
+
+    <body>
+        <div class="menu">
+            
+            
+            <nav role="navigation">
+                <ul>
+                    
+                        
+                        
+                            
+                            <li >
+                                
+                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;landing&#x2F;">
+                                    
+                                    Home
+                                </a>
+                                
+                            </li>
+                        
+                            
+                            <li >
+                                
+                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;">
+                                    
+                                    Variant calling scenarios
+                                </a>
+                                
+                                    <ul>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;chromosome-specific-universe&#x2F;">
+                                                    
+                                                    Chromosome specific allele frequency universes
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;ffpe-artifact-handling&#x2F;">
+                                                    
+                                                    FFPE artifact handling
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="active">
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;pedigree-prior&#x2F;">
+                                                    
+                                                    Complex pedigree calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;population-prior&#x2F;">
+                                                    
+                                                    Population calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;rna-seq-variant-calling&#x2F;">
+                                                    
+                                                    Variant calling on RNA-seq data
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;simple-pedigree-prior&#x2F;">
+                                                    
+                                                    Trio pedigree calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;single-sample-germline-prior&#x2F;">
+                                                    
+                                                    Single sample germline calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-normal-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;normal calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-normal-relapse-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;normal&#x2F;relapse calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-only-prior&#x2F;">
+                                                    
+                                                    Tumor-only calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-only&#x2F;">
+                                                    
+                                                    Tumor-only calling without priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-relapse-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;relapse calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    
+                </ul>
+            </nav>
+            
+            <img src="/landing/varlociraptor-logo.svg" style="width: 8em; margin: auto; display: block; margin-top: 2em" />
+            
+        </div>
+
+        <div class="page">
+            <div class="page__header">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <span class="search-icon">🔎</span>
+                
+            </div>
+
+            <div class="page__content">
+                
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="Search..">
+                    <div class="search-results">
+                        <div class="search-results__header"></div>
+                        <ul class="search-results__items"></ul>
+                    </div>
+                </div>
+                
+                <div class="book-content">
+                    
+    <h1>Complex pedigree calling with priors</h1>
+    <p>This scenario configures Varlociraptor to perform a complex pedigree calling.
+The model is configured with prior assumptions about mutation rate and heterozygosity.
+Note that you should configure these with your own expetise or via literature research. 
+The values shown here are only examples.</p>
+<p>Note the reuse of the two denovo events in negated form as expressions in the <code>other</code> event. 
+Since the event space in Varlociraptor needs to cover all possibilites (absent event is always implicitly added), such statements can be very handy.
+When performing such a negation, it is important to also include the absent event though (to avoid considering it twice).</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">species</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">heterozygosity</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">0.001
+  </span><span style="color:#bf616a;">germline-mutation-rate</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">1e-3
+  ploidy</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">male</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">all</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      </span><span style="color:#bf616a;">X</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">1
+      Y</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">1
+    </span><span style="color:#bf616a;">female</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">all</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      </span><span style="color:#bf616a;">X</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      Y</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">0
+
+</span><span style="color:#bf616a;">samples</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">mother</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">female
+  father</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">male
+  child</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">male
+    inheritance</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">mendelian</span><span style="color:#c0c5ce;">:
+        </span><span style="color:#bf616a;">from</span><span style="color:#c0c5ce;">:
+          - </span><span style="color:#bf616a;">mother
+          </span><span style="color:#c0c5ce;">- </span><span style="color:#bf616a;">father
+  sibling</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">female
+    inheritance</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">mendelian</span><span style="color:#c0c5ce;">:
+        </span><span style="color:#bf616a;">from</span><span style="color:#c0c5ce;">:
+          - </span><span style="color:#bf616a;">mother
+          </span><span style="color:#c0c5ce;">- </span><span style="color:#bf616a;">father
+
+events</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">denovo_child</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">(child:0.5 | child:1.0) &amp; mother:0.0 &amp; father:0.0</span><span style="color:#c0c5ce;">&quot;
+  </span><span style="color:#bf616a;">denovo_sibling</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">(sibling:0.5 | sibling:1.0) &amp; mother:0.0 &amp; father:0.0</span><span style="color:#c0c5ce;">&quot;
+  </span><span style="color:#bf616a;">other</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">!($denovo_child | $denovo_sibling | $absent)</span><span style="color:#c0c5ce;">&quot;
+
+</span></code></pre><h2 id="prior-probabilities">Prior probabilities</h2>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<h3 id="sample-child-chromosome-1">sample: child, chromosome: 1</h3>
+<div id="child-1"></div>
+<script>
+    vegaEmbed('#child-1', {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "values": [
+      {
+        "hash": "8D150DC0",
+        "prob": 0.9979168809332484,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "8D150DC0",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "8D150DC0",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "8D150DC0",
+        "sample": "sibling",
+        "vaf": 0.0
+      },
+      {
+        "hash": "694BB6CA",
+        "prob": 0.0009979190579358734,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "694BB6CA",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "694BB6CA",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "694BB6CA",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "49B06D2A",
+        "prob": 9.979151112310762e-7,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "49B06D2A",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "49B06D2A",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "49B06D2A",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "7661D826",
+        "prob": 0.00025000048175247895,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "7661D826",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "7661D826",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "7661D826",
+        "sample": "sibling",
+        "vaf": 0.0
+      },
+      {
+        "hash": "349B32E6",
+        "prob": 0.0002502504293084198,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "349B32E6",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "349B32E6",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "349B32E6",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "94F4DE53",
+        "prob": 2.5024952718415834e-7,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "94F4DE53",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "94F4DE53",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "94F4DE53",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "1A413D35",
+        "prob": 0.00025000048175247895,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "1A413D35",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "1A413D35",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "1A413D35",
+        "sample": "sibling",
+        "vaf": 0.0
+      },
+      {
+        "hash": "D9B37286",
+        "prob": 0.0002502504293084198,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "D9B37286",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D9B37286",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "D9B37286",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "37D3E904",
+        "prob": 2.5024952718415834e-7,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "37D3E904",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "37D3E904",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "37D3E904",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "E2AF4944",
+        "prob": 0.00003125006021405957,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "E2AF4944",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E2AF4944",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E2AF4944",
+        "sample": "sibling",
+        "vaf": 0.0
+      },
+      {
+        "hash": "62E552D1",
+        "prob": 0.00006253136383396364,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "62E552D1",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "62E552D1",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "62E552D1",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F8BF1A98",
+        "prob": 0.00003131257851329238,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "F8BF1A98",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F8BF1A98",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F8BF1A98",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "8D150DC0",
+        "prob": 0.0009979190579358734,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "694BB6CA",
+        "prob": 9.979151112310762e-7,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "49B06D2A",
+        "prob": 9.979134582221848e-10,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "7661D826",
+        "prob": 0.0002502504293084198,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "349B32E6",
+        "prob": 0.0002505006281478324,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "94F4DE53",
+        "prob": 2.504997526605865e-7,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "8E6B17A8",
+        "prob": 0.0005000009635316259,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "8E6B17A8",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "8E6B17A8",
+        "sample": "mother",
+        "vaf": 1.0
+      },
+      {
+        "hash": "8E6B17A8",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "CF1FBA98",
+        "prob": 4.999991052720521e-7,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "CF1FBA98",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "CF1FBA98",
+        "sample": "mother",
+        "vaf": 1.0
+      },
+      {
+        "hash": "CF1FBA98",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "1A413D35",
+        "prob": 0.0002502504293084198,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D9B37286",
+        "prob": 0.0002505006281478324,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "37D3E904",
+        "prob": 2.504997526605865e-7,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E2AF4944",
+        "prob": 0.00006253136383396364,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "62E552D1",
+        "prob": 0.00012512524589112476,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "F8BF1A98",
+        "prob": 0.00006265646328364976,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "649547FB",
+        "prob": 0.0000833334645495835,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "649547FB",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "649547FB",
+        "sample": "mother",
+        "vaf": 1.0
+      },
+      {
+        "hash": "649547FB",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "DF341C95",
+        "prob": 0.00008341679585452936,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "DF341C95",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "DF341C95",
+        "sample": "mother",
+        "vaf": 1.0
+      },
+      {
+        "hash": "DF341C95",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "B89C6E96",
+        "prob": 0.0005000009635316259,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "B89C6E96",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "B89C6E96",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "B89C6E96",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "2C4B3BF6",
+        "prob": 4.999991052720521e-7,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "2C4B3BF6",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "2C4B3BF6",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "2C4B3BF6",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "E4DEBBE3",
+        "prob": 0.0000833334645495835,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E4DEBBE3",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "E4DEBBE3",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E4DEBBE3",
+        "sample": "sibling",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E84A7F94",
+        "prob": 0.00008341679585452936,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E84A7F94",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "E84A7F94",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "E84A7F94",
+        "sample": "sibling",
+        "vaf": 1.0
+      },
+      {
+        "hash": "8D150DC0",
+        "prob": 9.979151112310762e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "694BB6CA",
+        "prob": 9.979134582221848e-10,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "49B06D2A",
+        "prob": 9.979133152540228e-13,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "7661D826",
+        "prob": 2.5024952718415834e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "349B32E6",
+        "prob": 2.504997526605865e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "94F4DE53",
+        "prob": 2.504994157532755e-10,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "8E6B17A8",
+        "prob": 4.999991052720521e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "CF1FBA98",
+        "prob": 4.999983579939334e-10,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "1A413D35",
+        "prob": 2.5024952718415834e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "D9B37286",
+        "prob": 2.504997526605865e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "37D3E904",
+        "prob": 2.504994157532755e-10,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "E2AF4944",
+        "prob": 0.00003131257851329238,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "62E552D1",
+        "prob": 0.00006265646328364976,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "F8BF1A98",
+        "prob": 0.000031375222571435786,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "649547FB",
+        "prob": 0.00008341679585452936,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "DF341C95",
+        "prob": 0.00008350021046350377,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "B89C6E96",
+        "prob": 4.999991052720521e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "2C4B3BF6",
+        "prob": 4.999983579939334e-10,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "E4DEBBE3",
+        "prob": 0.00008341679585452936,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "E84A7F94",
+        "prob": 0.00008350021046350377,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "491DFF91",
+        "prob": 0.00025000048175247895,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "491DFF91",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "491DFF91",
+        "sample": "mother",
+        "vaf": 1.0
+      },
+      {
+        "hash": "491DFF91",
+        "sample": "sibling",
+        "vaf": 1.0
+      }
+    ]
+  },
+  "description": "Prior distribution.",
+  "facet": {
+    "row": {
+      "field": "hash",
+      "header": {
+        "labelColor": "white",
+        "labelExpr": "''",
+        "labelFontSize": 0,
+        "title": ""
+      },
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "layer": [
+      {
+        "encoding": {
+          "color": {
+            "field": "sample",
+            "type": "nominal"
+          },
+          "x": {
+            "field": "vaf",
+            "type": "quantitative"
+          },
+          "x2": {
+            "field": "vaf",
+            "type": "quantitative"
+          },
+          "y": {
+            "value": 0
+          },
+          "y2": {
+            "value": 200
+          }
+        },
+        "mark": "rule",
+        "transform": [
+          {
+            "filter": "datum.sample != 'child'"
+          }
+        ]
+      },
+      {
+        "encoding": {
+          "color": {
+            "field": "sample",
+            "type": "nominal"
+          },
+          "x": {
+            "field": "vaf",
+            "title": "VAF",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "prob",
+            "scale": {
+              "type": "log"
+            },
+            "title": "Prior probability",
+            "type": "quantitative"
+          }
+        },
+        "mark": {
+          "point": true,
+          "type": "line"
+        },
+        "transform": [
+          {
+            "filter": {
+              "equal": "child",
+              "field": "sample"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+);
+</script>
+
+
+                </div>
+            </div>
+
+            <div class="prev-link">
+                
+    
+        <a class="previous" href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;ffpe-artifact-handling&#x2F;"><</a>
+    
+
+            </div>
+
+            <div class="next-link">
+                
+    
+        <a class="next" href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;population-prior&#x2F;">></a>
+    
+
+            </div>
+        </div>
+
+        
+            
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/elasticlunr.min.js"></script>
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/search_index.en.js"></script>
+            
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/book.js"></script>
+        
+    </body>
+
+</html>

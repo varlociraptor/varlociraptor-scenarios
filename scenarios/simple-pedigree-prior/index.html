@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Varlociraptor Scenario Catalog</title>
+
+      
+      
+
+      <!-- CSS -->
+      
+      <link rel="stylesheet" href="https://varlociraptor.github.io/varlociraptor-scenarios/book.css">
+      
+
+      
+      
+    </head>
+
+    <body>
+        <div class="menu">
+            
+            
+            <nav role="navigation">
+                <ul>
+                    
+                        
+                        
+                            
+                            <li >
+                                
+                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;landing&#x2F;">
+                                    
+                                    Home
+                                </a>
+                                
+                            </li>
+                        
+                            
+                            <li >
+                                
+                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;">
+                                    
+                                    Variant calling scenarios
+                                </a>
+                                
+                                    <ul>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;chromosome-specific-universe&#x2F;">
+                                                    
+                                                    Chromosome specific allele frequency universes
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;ffpe-artifact-handling&#x2F;">
+                                                    
+                                                    FFPE artifact handling
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;pedigree-prior&#x2F;">
+                                                    
+                                                    Complex pedigree calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;population-prior&#x2F;">
+                                                    
+                                                    Population calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;rna-seq-variant-calling&#x2F;">
+                                                    
+                                                    Variant calling on RNA-seq data
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="active">
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;simple-pedigree-prior&#x2F;">
+                                                    
+                                                    Trio pedigree calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;single-sample-germline-prior&#x2F;">
+                                                    
+                                                    Single sample germline calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-normal-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;normal calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-normal-relapse-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;normal&#x2F;relapse calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-only-prior&#x2F;">
+                                                    
+                                                    Tumor-only calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-only&#x2F;">
+                                                    
+                                                    Tumor-only calling without priors
+                                                </a>
+                                            </li>
+                                        
+                                            <li >
+                                                <a href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;tumor-relapse-prior&#x2F;">
+                                                    
+                                                    Tumor&#x2F;relapse calling with priors
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    
+                </ul>
+            </nav>
+            
+            <img src="/landing/varlociraptor-logo.svg" style="width: 8em; margin: auto; display: block; margin-top: 2em" />
+            
+        </div>
+
+        <div class="page">
+            <div class="page__header">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <span class="search-icon">🔎</span>
+                
+            </div>
+
+            <div class="page__content">
+                
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="Search..">
+                    <div class="search-results">
+                        <div class="search-results__header"></div>
+                        <ul class="search-results__items"></ul>
+                    </div>
+                </div>
+                
+                <div class="book-content">
+                    
+    <h1>Trio pedigree calling with priors</h1>
+    <p>This scenario configures Varlociraptor to perform a simple trio pedigree calling.
+The model is configured with prior assumptions about mutation rate and heterozygosity.
+Note that you should configure these with your own expetise or via literature research. 
+The values shown here are only examples.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">species</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">heterozygosity</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">0.001
+  </span><span style="color:#bf616a;">germline-mutation-rate</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">1e-3
+  ploidy</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">male</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">all</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      </span><span style="color:#bf616a;">X</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">1
+      Y</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">1
+    </span><span style="color:#bf616a;">female</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">all</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      </span><span style="color:#bf616a;">X</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">2
+      Y</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">0
+
+</span><span style="color:#bf616a;">samples</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">mother</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">female
+  father</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">male
+  child</span><span style="color:#c0c5ce;">:
+    </span><span style="color:#bf616a;">sex</span><span style="color:#c0c5ce;">: </span><span style="color:#bf616a;">male
+    inheritance</span><span style="color:#c0c5ce;">:
+      </span><span style="color:#bf616a;">mendelian</span><span style="color:#c0c5ce;">:
+        </span><span style="color:#bf616a;">from</span><span style="color:#c0c5ce;">:
+          - </span><span style="color:#bf616a;">mother
+          </span><span style="color:#c0c5ce;">- </span><span style="color:#bf616a;">father
+
+events</span><span style="color:#c0c5ce;">:
+  </span><span style="color:#bf616a;">denovo_child</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">(child:0.5 | child:1.0) &amp; mother:0.0 &amp; father:0.0</span><span style="color:#c0c5ce;">&quot;
+  </span><span style="color:#bf616a;">inherited</span><span style="color:#c0c5ce;">: &quot;</span><span style="color:#a3be8c;">!mother:0.0 | !father:0.0</span><span style="color:#c0c5ce;">&quot;
+
+</span></code></pre><h2 id="prior-probabilities">Prior probabilities</h2>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<h3 id="sample-child-chromosome-1">sample: child, chromosome: 1</h3>
+<div id="child-1"></div>
+<script>
+    vegaEmbed('#child-1', {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "values": [
+      {
+        "hash": "FC0A055D",
+        "prob": 0.9979168809332484,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "FC0A055D",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "FC0A055D",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "FFD7C5FA",
+        "prob": 0.0005000009635316259,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "FFD7C5FA",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "FFD7C5FA",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "7360C25F",
+        "prob": 0.0005000009635316259,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "7360C25F",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "7360C25F",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "761E212F",
+        "prob": 0.00012500024086957234,
+        "sample": "child",
+        "vaf": 0.0
+      },
+      {
+        "hash": "761E212F",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "761E212F",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "FC0A055D",
+        "prob": 0.0009979190579358734,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "FFD7C5FA",
+        "prob": 0.000500500858643535,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "4D7BB96D",
+        "prob": 0.0005000009635316259,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "4D7BB96D",
+        "sample": "father",
+        "vaf": 0.0
+      },
+      {
+        "hash": "4D7BB96D",
+        "sample": "mother",
+        "vaf": 1.0
+      },
+      {
+        "hash": "7360C25F",
+        "prob": 0.000500500858643535,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "761E212F",
+        "prob": 0.000250125455362536,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D3CA494D",
+        "prob": 0.00016666692910805806,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D3CA494D",
+        "sample": "father",
+        "vaf": 0.5
+      },
+      {
+        "hash": "D3CA494D",
+        "sample": "mother",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A73BA6D6",
+        "prob": 0.0005000009635316259,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "A73BA6D6",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A73BA6D6",
+        "sample": "mother",
+        "vaf": 0.0
+      },
+      {
+        "hash": "23DD138E",
+        "prob": 0.00016666692910805806,
+        "sample": "child",
+        "vaf": 0.5
+      },
+      {
+        "hash": "23DD138E",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "23DD138E",
+        "sample": "mother",
+        "vaf": 0.5
+      },
+      {
+        "hash": "FC0A055D",
+        "prob": 9.979151112310762e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "FFD7C5FA",
+        "prob": 5.00499054395015e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "4D7BB96D",
+        "prob": 4.999991052720521e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "7360C25F",
+        "prob": 5.00499054395015e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "761E212F",
+        "prob": 0.00012525031406653036,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "D3CA494D",
+        "prob": 0.00016683359171795842,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "A73BA6D6",
+        "prob": 4.999991052720521e-7,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "23DD138E",
+        "prob": 0.00016683359171795842,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "0385FFCE",
+        "prob": 0.00025000048175247895,
+        "sample": "child",
+        "vaf": 1.0
+      },
+      {
+        "hash": "0385FFCE",
+        "sample": "father",
+        "vaf": 1.0
+      },
+      {
+        "hash": "0385FFCE",
+        "sample": "mother",
+        "vaf": 1.0
+      }
+    ]
+  },
+  "description": "Prior distribution.",
+  "facet": {
+    "row": {
+      "field": "hash",
+      "header": {
+        "labelColor": "white",
+        "labelExpr": "''",
+        "labelFontSize": 0,
+        "title": ""
+      },
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "layer": [
+      {
+        "encoding": {
+          "color": {
+            "field": "sample",
+            "type": "nominal"
+          },
+          "x": {
+            "field": "vaf",
+            "type": "quantitative"
+          },
+          "x2": {
+            "field": "vaf",
+            "type": "quantitative"
+          },
+          "y": {
+            "value": 0
+          },
+          "y2": {
+            "value": 200
+          }
+        },
+        "mark": "rule",
+        "transform": [
+          {
+            "filter": "datum.sample != 'child'"
+          }
+        ]
+      },
+      {
+        "encoding": {
+          "color": {
+            "field": "sample",
+            "type": "nominal"
+          },
+          "x": {
+            "field": "vaf",
+            "title": "VAF",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "prob",
+            "scale": {
+              "type": "log"
+            },
+            "title": "Prior probability",
+            "type": "quantitative"
+          }
+        },
+        "mark": {
+          "point": true,
+          "type": "line"
+        },
+        "transform": [
+          {
+            "filter": {
+              "equal": "child",
+              "field": "sample"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+);
+</script>
+
+
+                </div>
+            </div>
+
+            <div class="prev-link">
+                
+    
+        <a class="previous" href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;rna-seq-variant-calling&#x2F;"><</a>
+    
+
+            </div>
+
+            <div class="next-link">
+                
+    
+        <a class="next" href="https:&#x2F;&#x2F;varlociraptor.github.io&#x2F;varlociraptor-scenarios&#x2F;scenarios&#x2F;single-sample-germline-prior&#x2F;">></a>
+    
+
+            </div>
+        </div>
+
+        
+            
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/elasticlunr.min.js"></script>
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/search_index.en.js"></script>
+            
+            <script type="text/javascript" src="https://varlociraptor.github.io/varlociraptor-scenarios/book.js"></script>
+        
+    </body>
+
+</html>
