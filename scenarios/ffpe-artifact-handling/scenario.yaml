@@ -2,6 +2,7 @@ samples:
   ffpetumor:
     universe: "[0.0,1.0]"
     resolution: 0.01
+    fragment_end_bias: true # allows to detect errors induced by the very same FFPE fragment
 
 expressions:
   ffpe_subst: "C>T | G>A"
